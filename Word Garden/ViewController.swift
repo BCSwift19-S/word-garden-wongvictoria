@@ -29,6 +29,7 @@ class ViewController: UIViewController {
         playAgainButton.isHidden = true
 //        print ("In viewDidLoad, is guessedLetterField the first responder?",
 //            guessedLetterField.isFirstResponder)
+        //
         
     }
     
@@ -71,6 +72,7 @@ class ViewController: UIViewController {
             guessedLetterField.isEnabled = false
             guessLetterButton.isEnabled = false
             guessCountLabel.text = "So sorry, you're out of guesses. Try again?"
+            
         } else if !revealedWord.contains("_") {
             //You've won a grame
             playAgainButton.isHidden = false
